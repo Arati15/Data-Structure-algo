@@ -1,0 +1,22 @@
+Insertion sort is a simple sorting algorithm that works similar to the way you sort playing cards in your hands
+
+sort(int a[], int n)
+{
+    int i, j, temp;
+
+    for(i =1; i < n; i++)
+    {
+        temp = a[i];
+        j = i - 1;
+
+        while(j >= 0 && a [j] > temp)
+        {
+            a[j + 1] = a[j];
+            j = j - 1;
+        }
+        a [j + 1] = temp;
+    }
+}
+
+Time complexity :
+O(n*2)
